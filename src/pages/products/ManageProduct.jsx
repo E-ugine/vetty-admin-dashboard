@@ -25,7 +25,7 @@ const ManageProduct = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("https://vetty-backend-s1mr.onrender.com/products")
       .then((r) => r.json())
       .then(setProducts);
   }, []);
@@ -59,7 +59,7 @@ const ManageProduct = () => {
       const confirmDelete = window.confirm("Are you sure you want to delete this product?");
       if (confirmDelete) {
         try {
-          const response = await fetch(`http://localhost:3000/products/${itemID}`, {
+          const response = await fetch(`https://vetty-backend-s1mr.onrender.comproducts/${itemID}`, {
             method: "DELETE",
           });
 

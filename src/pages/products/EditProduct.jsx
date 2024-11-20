@@ -9,7 +9,7 @@ const EditProduct = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/products/${productId}`)
+    fetch(`https://vetty-backend-s1mr.onrender.com/products/${productId}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
@@ -31,7 +31,7 @@ const EditProduct = () => {
   };
 
   const handleSave = () => {
-    fetch(`http://localhost:3000/products/${productId}`, {
+    fetch(`https://vetty-backend-s1mr.onrender.com/products/${productId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(product),

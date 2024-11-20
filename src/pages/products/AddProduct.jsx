@@ -33,7 +33,7 @@ const AddProduct = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/products", {
+      const response = await fetch("https://vetty-backend-s1mr.onrender.com/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const Overview = () => {
 	const[products, setProducts] = useState([]);
 
 	useEffect(()=>{
-	  fetch('http://localhost:3000/products')
+	  fetch('https://vetty-backend-s1mr.onrender.com/products')
 	  .then((r)=> r.json())
 	  .then((data)=>{
 		setProducts(data)
