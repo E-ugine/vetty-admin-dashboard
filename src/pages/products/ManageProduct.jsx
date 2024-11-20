@@ -1,8 +1,6 @@
-import * as Icons from "react-icons/tb";
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/common/Input.jsx";
-import Badge from "../../components/common/Badge.jsx";
 import Button from "../../components/common/Button.jsx";
 import CheckBox from "../../components/common/CheckBox.jsx";
 import Dropdown from "../../components/common/Dropdown.jsx";
@@ -13,146 +11,87 @@ import RangeSlider from "../../components/common/RangeSlider.jsx";
 import MultiSelect from "../../components/common/MultiSelect.jsx";
 
 const ManageProduct = () => {
-
-  const[products, setProducts] = useState([]);
-
-  useEffect(()=>{
-    fetch('http://localhost:3000/products')
-    .then((r)=> r.json())
-    .then((data)=>{
-      setProducts(data)
-    })
-  },[])
-
+  const [products, setProducts] = useState([]);
   const [fields, setFields] = useState({
     name: "",
-    sku: "",
     store: "",
     status: "",
-    priceRange: [0,100],
+    priceRange: [0, 100],
   });
   const [bulkCheck, setBulkCheck] = useState(false);
   const [specificChecks, setSpecificChecks] = useState({});
-  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedValue, setSelectedValue] = useState(5);
-  const [tableRow, setTableRow] = useState([
-    { value: 2, label: "2" },
-    { value: 5, label: "5" },
-    { value: 10, label: "10" },
-  ]);
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("http://localhost:3000/products")
+      .then((r) => r.json())
+      .then(setProducts);
+  }, []);
+
   const handleInputChange = (key, value) => {
-    setFields({
-      ...products,
-      [key]: value,
-    });
-  };
- 
-
-  const bulkAction = [
-    { value: "delete", label: "Delete" },
-    { value: "category", label: "Category" },
-    { value: "status", label: "Status" },
-  ];
-
-  const bulkActionDropDown = (selectedOption) => {
-    console.log(selectedOption);
-  };
-
-  const onPageChange = (newPage) => {
-    setCurrentPage(newPage);
+    setFields((prev) => ({ ...prev, [key]: value }));
   };
 
   const handleBulkCheckbox = (isCheck) => {
     setBulkCheck(isCheck);
-    if (isCheck) {
-      const updateChecks = {};
-      products.forEach((product) => {
-        updateChecks[product.id] = true;
-      });
-      setSpecificChecks(updateChecks);
-    } else {
-      setSpecificChecks({});
-    }
+    setSpecificChecks(
+      isCheck
+        ? Object.fromEntries(products.map((product) => [product.id, true]))
+        : {}
+    );
   };
 
   const handleCheckProduct = (isCheck, id) => {
-    setSpecificChecks((prevSpecificChecks) => ({
-      ...prevSpecificChecks,
+    setSpecificChecks((prev) => ({
+      ...prev,
       [id]: isCheck,
     }));
   };
 
-  const showTableRow = (selectedOption) => {
-    setSelectedValue(selectedOption.label);
+  const handleSliderChange = (newValues) => {
+    setFields((prev) => ({ ...prev, priceRange: newValues }));
   };
 
-  const actionItems = ["Delete", "edit"];
+  const handleActionItemClick = async (item, itemID) => {
+    if (item.toLowerCase() === "delete") {
+      const confirmDelete = window.confirm("Are you sure you want to delete this product?");
+      if (confirmDelete) {
+        try {
+          const response = await fetch(`http://localhost:3000/products/${itemID}`, {
+            method: "DELETE",
+          });
 
-  const handleActionItemClick = (item, itemID) => {
-    var updateItem = item.toLowerCase();
-    if (updateItem === "delete") {
-      alert(`#${itemID} item delete`);
-    } else if (updateItem === "edit") {
+          if (!response.ok) {
+            throw new Error("Failed to delete the product.");
+          }
+
+          // Remove the deleted product from the state
+          setProducts((prevProducts) => prevProducts.filter((product) => product.id !== itemID));
+
+          alert(`Product #${itemID} has been successfully deleted.`);
+        } catch (error) {
+          console.error("Error deleting product:", error);
+          alert("An error occurred while deleting the product. Please try again.");
+        }
+      }
+    } else if (item.toLowerCase() === "edit") {
       navigate(`/catalog/product/manage/${itemID}`);
     }
   };
 
-  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
-
-  const handleToggleOffcanvas = () => {
-    setIsOffcanvasOpen(!isOffcanvasOpen);
-  };
-
-  const handleCloseOffcanvas = () => {
-    setIsOffcanvasOpen(false);
-  };
-
-  const handleSliderChange = (newValues) => {
-    setFields({
-      ...fields,
-      priceRange: newValues,
-    })
-  };
-
   const stores = [
-      { label: 'FashionFiesta' },
-      { label: 'TechTreasures' },
-      { label: 'GadgetGrove' },
-      { label: 'HomeHarbor' },
-      { label: 'HealthHaven' },
-      { label: 'BeautyBoutique' },
-      { label: "Bookworm's Haven" },
-      { label: 'PetParadise' },
-      { label: 'FoodieFinds' }
+    { label: "FashionFiesta" },
+    { label: "TechTreasures" },
+    { label: "GadgetGrove" },
   ];
-const status = [
-    { label: 'In Stock' },
-    { label: 'Out of Stock' },
-    { label: 'Available Soon' },
-    { label: 'Backorder' },
-    { label: 'Refurbished' },
-    { label: 'On Sale' },
-    { label: 'Limited Stock' },
-    { label: 'Discontinued' },
-    { label: 'Coming Soon' },
-    { label: 'New Arrival' },
-    { label: 'Preorder' },
-];
-  const handleSelectStore = (selectedValues) => {
-    setFields({
-      ...fields,
-      store: selectedValues,
-    })
-  };
 
-  const handleSelectStatus = (selectedValues) => {
-    setFields({
-      ...fields,
-      status: selectedValues.label,
-    })
-  };
-
+  const status = [
+    { label: "In Stock" },
+    { label: "Out of Stock" },
+    { label: "Available Soon" },
+  ];
 
   return (
     <section className="products">
@@ -160,169 +99,91 @@ const status = [
         <div className="wrapper">
           <div className="content transparent">
             <div className="content_head">
-              
-             
-              <Input
-                placeholder="Search Product..."
-                className="sm table_search"
-              />
-              <Offcanvas
-                isOpen={isOffcanvasOpen}
-                onClose={handleCloseOffcanvas}
-              >
+              <Input placeholder="Search Product..." className="sm table_search" />
+              <Offcanvas isOpen={isOffcanvasOpen} onClose={() => setIsOffcanvasOpen(false)}>
                 <div className="offcanvas-head">
-                  <h2>Advance Search</h2>
+                  <h2>Advanced Search</h2>
                 </div>
                 <div className="offcanvas-body">
-                  <div className="column">
-                    <Input
-                      type="text"
-                      placeholder="Enter the product name"
-                      label="Name"
-                      value={fields.name}
-                      onChange={(value) => handleInputChange("name", value)}
-                    />
-                  </div>
-                  <div className="column">
-                    <Input
-                      type="text"
-                      label="Price"
-                      value={fields.price}
-                      placeholder="Enter the product price"
-                      onChange={(value) => handleInputChange("price", value)}
-                    />
-                  </div>
-                  <div className="column">
-                    <MultiSelect
-                      options={stores}
-                      placeholder="Select Store"
-                      label="Store"
-                      isSelected={fields.store}
-                      onChange={handleSelectStore}
-                    />
-                  </div>
-                  <div className="column">
-                    <Dropdown
-                      options={status}
-                      placeholder="Select Store"
-                      label="Store"
-                      selectedValue={fields.status}
-                      onClick={handleSelectStatus}
-                    />
-                  </div>
-                  <div className="column">
-                    <RangeSlider label="Price range" values={fields.priceRange} onValuesChange={handleSliderChange} />
-                  </div>
+                  <Input
+                    type="text"
+                    placeholder="Enter product name"
+                    label="Name"
+                    value={fields.name}
+                    onChange={(value) => handleInputChange("name", value)}
+                  />
+                  <MultiSelect
+                    options={stores}
+                    placeholder="Select Store"
+                    label="Store"
+                    isSelected={fields.store}
+                    onChange={(value) => handleInputChange("store", value)}
+                  />
+                  <Dropdown
+                    options={status}
+                    placeholder="Select Status"
+                    label="Status"
+                    selectedValue={fields.status}
+                    onClick={(value) => handleInputChange("status", value)}
+                  />
+                  <RangeSlider
+                    label="Price range"
+                    values={fields.priceRange}
+                    onValuesChange={handleSliderChange}
+                  />
                 </div>
                 <div className="offcanvas-footer">
-                  <Button
-                    label="Discard"
-                    className="sm outline"
-                    icon={<Icons.TbX />}
-                    onClick={handleCloseOffcanvas}
-                  />
-                  <Button
-                    label="Filter"
-                    className="sm"
-                    icon={<Icons.TbFilter />}
-                    onClick={handleCloseOffcanvas}
-                  />
+                  <Button label="Discard" className="sm outline" onClick={() => setIsOffcanvasOpen(false)} />
+                  <Button label="Filter" className="sm" onClick={() => setIsOffcanvasOpen(false)} />
                 </div>
               </Offcanvas>
-              <div className="btn_parent">
-                <Link to="/catalog/product/add" className="sm button">
-                  <Icons.TbPlus />
-                  <span>Create Product</span>
-                </Link>
-                <Button
-                  label="Reload"
-                  icon={<Icons.TbRefresh />}
-                  className="sm"
-                />
-              </div>
+              <Link to="/catalog/product/add" className="sm button">
+                Create Product
+              </Link>
             </div>
             <div className="content_body">
-              <div className="table_responsive">
-                <table className="separate">
-                  <thead>
-                    <tr>
-                      <th className="td_checkbox">
+              <table className="separate">
+                <thead>
+                  <tr>
+                    <th>
+                      <CheckBox onChange={handleBulkCheckbox} isChecked={bulkCheck} />
+                    </th>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {products.map((product) => (
+                    <tr key={product.id}>
+                      <td>
                         <CheckBox
-                          onChange={handleBulkCheckbox}
-                          isChecked={bulkCheck}
+                          onChange={(isCheck) => handleCheckProduct(isCheck, product.id)}
+                          isChecked={specificChecks[product.id] || false}
                         />
-                      </th>
-                      <th className="td_id">id</th>
-                      <th className="td_image">image</th>
-                      <th colSpan="4">name</th>
-                      <th>price</th>
-                      
-                    
+                      </td>
+                      <td>{product.id}</td>
+                      <td>
+                        <img src={product.imageSrc} alt={product.name} />
+                      </td>
+                      <td>{product.name}</td>
+                      <td>
+                        {product.price} {product.currency}
+                      </td>
+                      <td>
+                        <TableAction
+                          actionItems={["Delete", "Edit"]}
+                          onActionItemClick={(item) => handleActionItemClick(item, product.id)}
+                        />
+                      </td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {products.map((product, key) => {
-                      return (
-                        <tr key={key}>
-                          <td className="td_checkbox">
-                            <CheckBox
-                              onChange={(isCheck) =>
-                                handleCheckProduct(isCheck, product.id)
-                              }
-                              isChecked={specificChecks[product.id] || false}
-                            />
-                          </td>
-                          <td className="td_id">{product.id}</td>
-                          <td className="td_image">
-                            <img
-                              src={product.imageSrc}
-                              alt={product.name}
-                            />
-                          </td>
-                          <td colSpan="4">
-                            <Link to={product.id}>{product.name}</Link>
-                          </td>
-                          <td>
-                            {`${product.price} `}
-                            <b>{product.currency}</b>
-                          </td>
-                          <td>
-                            <Link>{product.brand}</Link>
-                          </td>
-                          
-                          <td className="td_status">
-                            {product.description}
-                          </td>
-                         
-                          <td className="td_action">
-                            <TableAction
-                              actionItems={actionItems}
-                              onActionItemClick={(item) =>
-                                handleActionItemClick(item, product.id)
-                              }
-                            />
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <div className="content_footer">
-              <Dropdown
-                className="top show_rows sm"
-                placeholder="please select"
-                selectedValue={selectedValue}
-                onClick={showTableRow}
-                options={tableRow}
-              />
-              <Pagination
-                currentPage={currentPage}
-                totalPages={5}
-                onPageChange={onPageChange}
-              />
-            </div>
+            <Pagination currentPage={currentPage} totalPages={5} onPageChange={setCurrentPage} />
           </div>
         </div>
       </div>

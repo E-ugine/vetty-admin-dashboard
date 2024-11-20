@@ -333,19 +333,6 @@
       "details": "details"
     },
     {
-      "id": "21",
-      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-      "title": "Pet brush",
-      "price": 400,
-      "stars": 4,
-      "rates": 65,
-      "discount": 40,
-      "state": 1,
-      "quantity": 0,
-      "type": "Pet Accessory",
-      "details": "details"
-    },
-    {
       "id": "22",
       "imageSrc": "https://i.pinimg.com/736x/d9/98/d4/d998d4a1b942a451c52af088b101803e.jpg",
       "title": "Dog bed",
