@@ -12,6 +12,17 @@ import TableAction from "../../components/common/TableAction.jsx";
 import SelectOption from "../../components/common/SelectOption.jsx";
 
 const ManageCustomer = () => {
+
+const[customers, setCustomers] = useState([]);
+
+useEffect(()=>{
+  fetch('http://localhost:3000/customers')
+  .then((r)=> r.json())
+  .then((data)=>{
+    setCustomers(data)
+  })
+},[])
+
   const [bulkCheck, setBulkCheck] = useState(false);
   const [specificChecks, setSpecificChecks] = useState({});
   const navigate = useNavigate();
@@ -23,7 +34,7 @@ const ManageCustomer = () => {
     { value: 10, label: "10" },
   ]);
 
-  const customer = Customers;
+
 
   const bulkAction = [
     { value: "delete", label: "Delete" },
@@ -43,7 +54,7 @@ const ManageCustomer = () => {
     setBulkCheck(isCheck);
     if (isCheck) {
       const updateChecks = {};
-      customer.forEach((customer) => {
+      customers.forEach((customer) => {
         updateChecks[customer.id] = true;
       });
       setSpecificChecks(updateChecks);
@@ -123,7 +134,7 @@ const ManageCustomer = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {customer.map((customer, key) => {
+                    {customers.map((customer, key) => {
                       return (
                         <tr key={key}>
                           <td className="td_checkbox">

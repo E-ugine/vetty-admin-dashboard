@@ -1,8 +1,8 @@
 import * as Icons from "react-icons/tb";
+import {useState, useEffect} from 'react';
 import Reviews from "../../api/Reviews.json";
 import Products from "../../api/Products.json";
 import Customers from "../../api/Customers.json";
-import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/common/Input.jsx";
 import Badge from "../../components/common/Badge.jsx";
@@ -15,6 +15,40 @@ import TableAction from "../../components/common/TableAction.jsx";
 import SelectOption from "../../components/common/SelectOption.jsx";
 
 const ManageReviews = () => {
+
+  const [reviews, setReviews] = useState([])
+
+  useEffect(()=>{
+    fetch('http://localhost:3000/reviews')
+    .then((r)=> r.json())
+    .then((data)=>{
+      setReviews(data)
+    })
+  },[]);
+
+
+  const[customers, setCustomers] = useState([]);
+
+useEffect(()=>{
+  fetch('http://localhost:3000/customers')
+  .then((r)=> r.json())
+  .then((data)=>{
+    setCustomers(data)
+  })
+},[])
+
+
+const[products, setProducts] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:3000/products')
+    .then((r)=> r.json())
+    .then((data)=>{
+      setProducts(data)
+    })
+  },[])
+
+
   const [bulkCheck, setBulkCheck] = useState(false);
   const [specificChecks, setSpecificChecks] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
@@ -26,12 +60,12 @@ const ManageReviews = () => {
     { value: 10, label: "10" },
   ]);
 
-  const reviews = Reviews;
-  const productIds = Reviews.map(review => review.product_id.toString());
-  const customerIds = Reviews.map(review => review.customer_id.toString());
+  
+  const productIds = reviews.map(review => review.product_id.toString());
+  const customerIds = reviews.map(review => review.customer_id.toString());
 
-  const product = Products.filter(product => productIds.includes(product.id.toString()));
-  const customer = Customers.filter(customer => customerIds.includes(customer.id.toString()));
+  const product = products.filter(product => productIds.includes(product.id.toString()));
+  const customer = customers.filter(customer => customerIds.includes(customer.id.toString()));
   const bulkAction = [
     { value: "delete", label: "Delete" },
     { value: "category", label: "Category" },
@@ -142,7 +176,7 @@ const ManageReviews = () => {
                           </td>
                           <td className="td_id">{review.review_id}</td>
                           <td>
-                            <Link to={review.review_id}>{product[key].name}</Link>
+                            <Link to={review.review_id}>{product[key].title}</Link>
                           </td>
                           <td>
                             <Link to={review.review_id}>{customer[key].name}</Link>

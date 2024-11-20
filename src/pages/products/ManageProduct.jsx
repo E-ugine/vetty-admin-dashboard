@@ -1,5 +1,4 @@
 import * as Icons from "react-icons/tb";
-import Products from "../../api/Products.json";
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/common/Input.jsx";
@@ -14,6 +13,17 @@ import RangeSlider from "../../components/common/RangeSlider.jsx";
 import MultiSelect from "../../components/common/MultiSelect.jsx";
 
 const ManageProduct = () => {
+
+  const[products, setProducts] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:3000/products')
+    .then((r)=> r.json())
+    .then((data)=>{
+      setProducts(data)
+    })
+  },[])
+
   const [fields, setFields] = useState({
     name: "",
     sku: "",
@@ -33,11 +43,11 @@ const ManageProduct = () => {
   ]);
   const handleInputChange = (key, value) => {
     setFields({
-      ...product,
+      ...products,
       [key]: value,
     });
   };
-  const products = Products;
+ 
 
   const bulkAction = [
     { value: "delete", label: "Delete" },
@@ -256,12 +266,8 @@ const status = [
                       <th className="td_image">image</th>
                       <th colSpan="4">name</th>
                       <th>price</th>
-                      <th>store</th>
-                      <th>sku</th>
-                      <th>created at</th>
-                      <th className="td_status">status</th>
-                      <th className="td_status">stock status</th>
-                      <th className="td_action">#</th>
+                      
+                    
                     </tr>
                   </thead>
                   <tbody>
@@ -279,7 +285,7 @@ const status = [
                           <td className="td_id">{product.id}</td>
                           <td className="td_image">
                             <img
-                              src={product.images.thumbnail}
+                              src={product.imageSrc}
                               alt={product.name}
                             />
                           </td>
@@ -293,30 +299,11 @@ const status = [
                           <td>
                             <Link>{product.brand}</Link>
                           </td>
-                          <td>{product.sku}</td>
-                          <td>{product.availability_dates.start_date}</td>
+                          
                           <td className="td_status">
-                            {product.ratings.average_rating}
+                            {product.description}
                           </td>
-                          <td className="td_status">
-                            {product.inventory.in_stock ? (
-                              <Badge
-                                label="In Stock"
-                                className="light-success"
-                              />
-                            ) : product.inventory.quantity < 10 &&
-                              product.inventory.quantity > 0 ? (
-                              <Badge
-                                label="Low Stock"
-                                className="light-warning"
-                              />
-                            ) : (
-                              <Badge
-                                label="Out of Stock"
-                                className="light-danger"
-                              />
-                            )}
-                          </td>
+                         
                           <td className="td_action">
                             <TableAction
                               actionItems={actionItems}
