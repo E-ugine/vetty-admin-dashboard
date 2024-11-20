@@ -26,6 +26,7 @@ const navigation = [
         url: "/product/add",
         icon: <Icons.TbCirclePlus className="menu_icon" />,
       },
+     
 
     ],
   },
