@@ -1,898 +1,971 @@
 {
-    "services": [
-      {
-        "id": 1,
-        "type": "Pet Grooming",
-        "name": "Full Body Grooming",
-        "description": "A full-body grooming service for cats and dogs, including wash, trim, and nail clipping.",
-        "price": 50,
-        "image_url": "https://media.istockphoto.com/id/1393558296/photo/dog-taking-bath-at-home-n.webp?a=1&b=1&s=612x612&w=0&k=20&c=aRaRfyIeVdYKlPJ13ojDTyUQEUjkDpOCZtotIc56Lh0="
+  "services": [
+    {
+      "id": "1",
+      "type": "Pet Grooming",
+      "name": "Full Body Grooming",
+      "description": "A full-body grooming service for cats and dogs, including wash, trim, and nail clipping.",
+      "price": 50,
+      "image_url": "https://media.istockphoto.com/id/1393558296/photo/dog-taking-bath-at-home-n.webp?a=1&b=1&s=612x612&w=0&k=20&c=aRaRfyIeVdYKlPJ13ojDTyUQEUjkDpOCZtotIc56Lh0="
+    },
+    {
+      "id": "2",
+      "type": "Vaccination",
+      "name": "Dog Vaccination",
+      "description": "Complete vaccination for dogs, including rabies, parvo, and distemper.",
+      "price": 100,
+      "image_url": "https://media.istockphoto.com/id/513595916/photo/vets-giving-shot-to-a-puppy.webp?a=1&b=1&s=612x612&w=0&k=20&c=SiSbnqwbxH3-qVFehXDYhQD-FtNOlun93as0FDkRDU0="
+    },
+    {
+      "id": "3",
+      "type": "Vaccination",
+      "name": "Cat Vaccination",
+      "description": "Comprehensive vaccination for cats, covering feline leukemia, rabies, and more.",
+      "price": 90,
+      "image_url": "https://media.istockphoto.com/id/1352655350/photo/female-veterinarian-doctor-is-giving-an-injection-to-a-cat.webp?a=1&b=1&s=612x612&w=0&k=20&c=wJ-fFEWbiJEEsUuaDvYXGZRed0Ytm0Ui16rtnhcPm0Y="
+    },
+    {
+      "id": "4",
+      "type": "Consultation",
+      "name": "Veterinary Consultation",
+      "description": "One-on-one consultation with a certified vet to diagnose and discuss your pet's health.",
+      "price": 60,
+      "image_url": "https://media.istockphoto.com/id/638142534/photo/examining-a-kitten.webp?a=1&b=1&s=612x612&w=0&k=20&c=91rpW-PRqAcPXBkuGkWETzDARFsk0SWZ07U_NkU9ugI="
+    },
+    {
+      "id": "6",
+      "type": "Pet Food",
+      "name": "Fish Pellets",
+      "description": "High-quality fish pellets for aquatic pets like goldfish and bettas.",
+      "price": 15,
+      "image_url": "https://media.istockphoto.com/id/1091670812/photo/close-up-on-animal-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=p0rOVxn5SMRRTEs3gyvCPt9KlcUCiaUTPbV3YuNRDcE="
+    },
+    {
+      "id": "7",
+      "type": "Pet Food",
+      "name": "Chicken Pet Food",
+      "description": "Premium chicken-based pet food for both cats and dogs.",
+      "price": 25,
+      "image_url": "https://media.istockphoto.com/id/2182380119/photo/chickens-eating-from-a-feeder-at-a-poultry-farm.webp?a=1&b=1&s=612x612&w=0&k=20&c=I9Cp9-SQ_Z1m6AJPnVIc8F72uJu2lr5yASZBV314o2Y="
+    },
+    {
+      "id": "8",
+      "type": "Pet Accessories",
+      "name": "Pet Collar",
+      "description": "A durable, adjustable collar for your pet, available in various sizes.",
+      "price": 20,
+      "image_url": "https://media.istockphoto.com/id/1248454290/photo/accessories-for-cat-and-dog-on-blue-background-pet-mathanie-and-eastmarting-concept-flat-lay-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=OXwUAjrAZHgrIb5YxOpv-XhqTN82bwHoQJBzsNDCkuk="
+    },
+    {
+      "id": "9",
+      "type": "Pet Medication",
+      "name": "Flea Treatment",
+      "description": "Effective flea treatment for dogs and cats.",
+      "price": 40,
+      "image_url": "https://media.istockphoto.com/id/1801414577/photo/close-up-a-man-applying-tick-and-flea-prevention-treatment-and-medicine-to-her-dog-or-pet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZnZMdkw9GySUAt9zfw_flxAMkeCvopW630D0dXGGgLY="
+    },
+    {
+      "id": "10",
+      "type": "Pet Health",
+      "name": "Pet Multivitamins",
+      "description": "Multivitamins for overall health and wellness of pets.",
+      "price": 30,
+      "image_url": "https://media.istockphoto.com/id/184941787/photo/senior-golden-retriever-taking-daily-medication.webp?a=1&b=1&s=612x612&w=0&k=20&c=qrawYq9yELKnlHC113yjaP2O9mHZfK8KodZKaV6teGA="
+    }
+  ],
+  "products": [
+    {
+      "id": "0",
+      "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/47/8330882/1.jpg?2246",
+      "title": "Krunshi Plus",
+      "price": 960,
+      "stars": 4,
+      "rates": 53,
+      "discount": "",
+      "quantity": 0,
+      "type": "Pet Food",
+      "details": "Details"
+    },
+    {
+      "id": "1",
+      "imageSrc": "https://i.pinimg.com/736x/d1/6b/8a/d16b8a63cfdf592966af5db420ab16f4.jpg",
+      "title": "Pet Collar",
+      "price": 360,
+      "stars": 5,
+      "rates": 87,
+      "discount": "",
+      "quantity": 0,
+      "type": "Pet Accessories",
+      "details": "Details"
+    },
+    {
+      "id": "2",
+      "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/89/0430882/1.jpg?2333",
+      "title": "Dog Rice",
+      "price": 100,
+      "stars": 3,
+      "rates": 24,
+      "discount": "",
+      "quantity": 0,
+      "type": "Pet Food",
+      "details": "Details about the dog food"
+    },
+    {
+      "id": "3",
+      "imageSrc": "https://i.pinimg.com/736x/71/53/aa/7153aa3a28efc418cb75e4202eea1cfe.jpg",
+      "title": "Pumpkin brush",
+      "price": 700,
+      "stars": 4,
+      "rates": 65,
+      "discount": "",
+      "quantity": 0,
+      "type": "Pet Accessories",
+      "details": "Details"
+    },
+    {
+      "id": "4",
+      "imageSrc": "https://media.istockphoto.com/id/1801414577/photo/close-up-a-man-applying-tick-and-flea-prevention-treatment-and-medicine-to-her-dog-or-pet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZnZMdkw9GySUAt9zfw_flxAMkeCvopW630D0dXGGgLY=",
+      "title": "Pet Medication",
+      "price": 500,
+      "stars": 3,
+      "rates": 40,
+      "discount": "",
+      "quantity": 0,
+      "type": "Pet Health",
+      "details": "Details"
+    },
+    {
+      "id": "5",
+      "imageSrc": "https://i.pinimg.com/736x/d9/98/d4/d998d4a1b942a451c52af088b101803e.jpg",
+      "title": "Human Dog bed",
+      "price": 660,
+      "stars": 4,
+      "rates": 92,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Accessories",
+      "details": " Support for Comfort: It features soothing and warm faux shag fur supported with 3.2 memory foam. This combination distributes weight evenly, providing optimal pressure relief and joint support for you and your pet.It aslo pairs with a furry blanket, ensuring you a ultimate comfort for a good rest. Excellent New Relax: Cozzze Human dog bed can provide a new way to enjoy better rest, human dog bed can even accommodate you and your pet"
+    },
+    {
+      "id": "6",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet Brush",
+      "price": 660,
+      "stars": 5,
+      "rates": 77,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessories",
+      "details": "Details"
+    },
+    {
+      "id": "7",
+      "imageSrc": "https://i.pinimg.com/736x/6c/0e/72/6c0e725c790125d72629176caa440e2d.jpg",
+      "title": "Royal Canin",
+      "price": 360,
+      "stars": 4,
+      "rates": 59,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessories",
+      "details": "Details"
+    },
+    {
+      "id": "8",
+      "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/3384882/1.jpg?4500",
+      "title": "Krunshi Economy",
+      "price": 160,
+      "stars": 3,
+      "rates": 70,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Food",
+      "details": "Details"
+    },
+    {
+      "id": "9",
+      "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/96/5574511/1.jpg?0616",
+      "title": "Bravo",
+      "price": 1160,
+      "stars": 5,
+      "rates": 33,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Food",
+      "details": "Details"
+    },
+    {
+      "id": "10",
+      "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/98/8530682/1.jpg?0755",
+      "title": "Food Bowl",
+      "price": 360,
+      "stars": 4,
+      "rates": 95,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessories",
+      "details": "Details"
+    },
+    {
+      "id": "11",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 160,
+      "stars": 5,
+      "rates": 48,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "12",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1160,
+      "stars": 3,
+      "rates": 82,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "13",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 400,
+      "stars": 4,
+      "rates": 56,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "14",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 400,
+      "stars": 5,
+      "rates": 39,
+      "discount": 40,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "15",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 4,
+      "rates": 61,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "16",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 3,
+      "rates": 78,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "17",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 4,
+      "rates": 90,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "18",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 5,
+      "rates": 44,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "19",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 4,
+      "rates": 37,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "20",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 1200,
+      "stars": 3,
+      "rates": 49,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "21",
+      "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
+      "title": "Pet brush",
+      "price": 400,
+      "stars": 4,
+      "rates": 65,
+      "discount": 40,
+      "state": 1,
+      "quantity": 0,
+      "type": "Pet Accessory",
+      "details": "details"
+    },
+    {
+      "id": "22",
+      "imageSrc": "https://i.pinimg.com/736x/d9/98/d4/d998d4a1b942a451c52af088b101803e.jpg",
+      "title": "Dog bed",
+      "price": "3000",
+      "stars": "3",
+      "rates": "56",
+      "discount": "32",
+      "state": "1",
+      "quantity": "12",
+      "type": "Pet Accessory",
+      "details": "Good for lactating dogs"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Jaime Lannister",
+      "createdAt": "2022-05-10",
+      "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
+      "status": "Active",
+      "isVendor": false,
+      "addresses": [
+        {
+          "street": "123 Elm St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+        }
+      ],
+      "contact": {
+        "phone": "555-1234",
+        "email": "jaime@gmail.com"
       },
-      {
-        "id": 2,
-        "type": "Vaccination",
-        "name": "Dog Vaccination",
-        "description": "Complete vaccination for dogs, including rabies, parvo, and distemper.",
-        "price": 100,
-        "image_url": "https://media.istockphoto.com/id/513595916/photo/vets-giving-shot-to-a-puppy.webp?a=1&b=1&s=612x612&w=0&k=20&c=SiSbnqwbxH3-qVFehXDYhQD-FtNOlun93as0FDkRDU0="
+      "dob": "1985-03-15",
+      "gender": "Female",
+      "financial_info": {
+        "bank_account": {
+          "account_number": "9876543210",
+          "branch": "Downtown Branch",
+          "ifsc_code": "ABCD1234"
+        },
+        "credit_card": {
+          "card_number": "**** **** **** 5678",
+          "expiry_date": "09/23",
+          "cvv": "***"
+        },
+        "income": "$80000"
       },
-      {
-        "id": 3,
-        "type": "Vaccination",
-        "name": "Cat Vaccination",
-        "description": "Comprehensive vaccination for cats, covering feline leukemia, rabies, and more.",
-        "price": 90,
-        "image_url": "https://media.istockphoto.com/id/1352655350/photo/female-veterinarian-doctor-is-giving-an-injection-to-a-cat.webp?a=1&b=1&s=612x612&w=0&k=20&c=wJ-fFEWbiJEEsUuaDvYXGZRed0Ytm0Ui16rtnhcPm0Y="
+      "purchase_history": [
+        {
+          "order_id": 101,
+          "product_id": 1,
+          "purchase_date": "2022-06-20",
+          "transaction_amount": "$500"
+        }
+      ],
+      "preferences": {
+        "product_preferences": [
+          "Electronics",
+          "Home Decor"
+        ],
+        "communication_channels": [
+          "Email",
+          "Phone"
+        ],
+        "feedback_given": true
       },
-      {
-        "id": 4,
-        "type": "Consultation",
-        "name": "Veterinary Consultation",
-        "description": "One-on-one consultation with a certified vet to diagnose and discuss your pet's health.",
-        "price": 60,
-        "image_url": "https://media.istockphoto.com/id/638142534/photo/examining-a-kitten.webp?a=1&b=1&s=612x612&w=0&k=20&c=91rpW-PRqAcPXBkuGkWETzDARFsk0SWZ07U_NkU9ugI="
+      "interactions": {
+        "customer_service_calls": 2,
+        "complaints_raised": 1
       },
-      {
-        "id": 6,
-        "type": "Pet Food",
-        "name": "Fish Pellets",
-        "description": "High-quality fish pellets for aquatic pets like goldfish and bettas.",
-        "price": 15,
-        "image_url": "https://media.istockphoto.com/id/1091670812/photo/close-up-on-animal-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=p0rOVxn5SMRRTEs3gyvCPt9KlcUCiaUTPbV3YuNRDcE="
+      "social_media": {
+        "profiles": {
+          "facebook": "alice.johnson",
+          "twitter": "alice85"
+        },
+        "interactions": {
+          "posts_liked": 20,
+          "comments_posted": 5
+        }
       },
-      {
-        "id": 7,
-        "type": "Pet Food",
-        "name": "Chicken Pet Food",
-        "description": "Premium chicken-based pet food for both cats and dogs.",
-        "price": 25,
-        "image_url": "https://media.istockphoto.com/id/2182380119/photo/chickens-eating-from-a-feeder-at-a-poultry-farm.webp?a=1&b=1&s=612x612&w=0&k=20&c=I9Cp9-SQ_Z1m6AJPnVIc8F72uJu2lr5yASZBV314o2Y="
-      },
-      {
-        "id": 8,
-        "type": "Pet Accessories",
-        "name": "Pet Collar",
-        "description": "A durable, adjustable collar for your pet, available in various sizes.",
-        "price": 20,
-        "image_url": "https://media.istockphoto.com/id/1248454290/photo/accessories-for-cat-and-dog-on-blue-background-pet-mathanie-and-eastmarting-concept-flat-lay-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=OXwUAjrAZHgrIb5YxOpv-XhqTN82bwHoQJBzsNDCkuk="
-      },
-      {
-        "id": 9,
-        "type": "Pet Medication",
-        "name": "Flea Treatment",
-        "description": "Effective flea treatment for dogs and cats.",
-        "price": 40,
-        "image_url": "https://media.istockphoto.com/id/1801414577/photo/close-up-a-man-applying-tick-and-flea-prevention-treatment-and-medicine-to-her-dog-or-pet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZnZMdkw9GySUAt9zfw_flxAMkeCvopW630D0dXGGgLY="
-      },
-      {
-        "id": 10,
-        "type": "Pet Health",
-        "name": "Pet Multivitamins",
-        "description": "Multivitamins for overall health and wellness of pets.",
-        "price": 30,
-        "image_url": "https://media.istockphoto.com/id/184941787/photo/senior-golden-retriever-taking-daily-medication.webp?a=1&b=1&s=612x612&w=0&k=20&c=qrawYq9yELKnlHC113yjaP2O9mHZfK8KodZKaV6teGA="
+      "demographic_info": {
+        "age_group": "30-40",
+        "marital_status": "Married",
+        "occupation": "Engineer"
       }
-    ],
-    "products":
-    [
-      {
-        "id": "0",
-        "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/47/8330882/1.jpg?2246",
-        "title": "Krunshi Plus",
-        "price": 960,
-        "stars": 4,
-        "rates": 53,
-        "discount": "",
-        "quantity": 0,
-        "type": "Pet Food",
-        "details": "Details"
+    },
+    {
+      "id": "2",
+      "name": "Daenerys Targaryen",
+      "createdAt": "2022-04-18",
+      "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
+      "status": "Active",
+      "isVendor": false,
+      "addresses": [
+        {
+          "street": "456 Oak St",
+          "city": "Smalltown",
+          "state": "NY",
+          "zip": "23456"
+        },
+        {
+          "street": "789 Pine St",
+          "city": "Metroville",
+          "state": "TX",
+          "zip": "34567"
+        }
+      ],
+      "contact": {
+        "phone": "555-5678",
+        "email": "daenerys@gmail.com"
       },
-      {
-        "id": "1",
-        "imageSrc": "https://i.pinimg.com/736x/d1/6b/8a/d16b8a63cfdf592966af5db420ab16f4.jpg",
-        "title": "Pet Collar",
-        "price": 360,
-        "stars": 5,
-        "rates": 87,
-        "discount": "",
-        "quantity": 0,
-        "type": "Pet Accessories",
-        "details": "Details"
+      "dob": "1978-12-10",
+      "gender": "Male",
+      "financial_info": {
+        "bank_account": {
+          "account_number": "8765432109",
+          "branch": "Uptown Branch",
+          "ifsc_code": "EFGH5678"
+        },
+        "credit_card": {
+          "card_number": "**** **** **** 6789",
+          "expiry_date": "07/24",
+          "cvv": "***"
+        },
+        "income": "$90000"
       },
-      {
-        "id": "2",
-        "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/89/0430882/1.jpg?2333",
-        "title": "Dog Rice",
-        "price": 100,
-        "stars": 3,
-        "rates": 24,
-        "discount": "",
-        "quantity": 0,
-        "type": "Pet Food",
-        "details": "Details about the dog food"
+      "purchase_history": [
+        {
+          "order_id": 103,
+          "product_id": 2,
+          "purchase_date": "2022-05-15",
+          "transaction_amount": "$700"
+        },
+        {
+          "order_id": 104,
+          "product_id": 4,
+          "purchase_date": "2022-07-10",
+          "transaction_amount": "$1200"
+        }
+      ],
+      "preferences": {
+        "product_preferences": [
+          "Electronics",
+          "Sports Equipment"
+        ],
+        "communication_channels": [
+          "Email",
+          "Phone"
+        ],
+        "feedback_given": true
       },
-      {
-        "id": "3",
-        "imageSrc": "https://i.pinimg.com/736x/71/53/aa/7153aa3a28efc418cb75e4202eea1cfe.jpg",
-        "title": "Pumpkin brush",
-        "price": 700,
-        "stars": 4,
-        "rates": 65,
-        "discount": "",
-        "quantity": 0,
-        "type": "Pet Accessories",
-        "details": "Details"
+      "interactions": {
+        "customer_service_calls": 3,
+        "complaints_raised": 2
       },
-      {
-        "id": "4",
-        "imageSrc": "https://media.istockphoto.com/id/1801414577/photo/close-up-a-man-applying-tick-and-flea-prevention-treatment-and-medicine-to-her-dog-or-pet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZnZMdkw9GySUAt9zfw_flxAMkeCvopW630D0dXGGgLY=",
-        "title": "Pet Medication",
-        "price": 500,
-        "stars": 3,
-        "rates": 40,
-        "discount": "",
-        "quantity": 0,
-        "type": "Pet Health",
-        "details": "Details"
+      "social_media": {
+        "profiles": {
+          "facebook": "bob.smith",
+          "twitter": "bob78"
+        },
+        "interactions": {
+          "posts_liked": 15,
+          "comments_posted": 3
+        }
       },
-      {
-        "id": "5",
-        "imageSrc": "https://i.pinimg.com/736x/d9/98/d4/d998d4a1b942a451c52af088b101803e.jpg",
-        "title": "Human Dog bed",
-        "price": 660,
-        "stars": 4,
-        "rates": 92,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Accessories",
-        "details": " Support for Comfort: It features soothing and warm faux shag fur supported with 3.2 memory foam. This combination distributes weight evenly, providing optimal pressure relief and joint support for you and your pet.It aslo pairs with a furry blanket, ensuring you a ultimate comfort for a good rest. Excellent New Relax: Cozzze Human dog bed can provide a new way to enjoy better rest, human dog bed can even accommodate you and your pet"
-      },
-      {
-        "id": "6",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet Brush",
-        "price": 660,
-        "stars": 5,
-        "rates": 77,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessories",
-        "details": "Details"
-      },
-      {
-        "id": "7",
-        "imageSrc": "https://i.pinimg.com/736x/6c/0e/72/6c0e725c790125d72629176caa440e2d.jpg",
-        "title": "Royal Canin",
-        "price": 360,
-        "stars": 4,
-        "rates": 59,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessories",
-        "details": "Details"
-      },
-      {
-        "id": "8",
-        "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/3384882/1.jpg?4500",
-        "title": "Krunshi Economy",
-        "price": 160,
-        "stars": 3,
-        "rates": 70,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Food",
-        "details": "Details"
-      },
-      {
-        "id": "9",
-        "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/96/5574511/1.jpg?0616",
-        "title": "Bravo",
-        "price": 1160,
-        "stars": 5,
-        "rates": 33,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Food",
-        "details": "Details"
-      },
-      {
-        "id": "10",
-        "imageSrc": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/98/8530682/1.jpg?0755",
-        "title": "Food Bowl",
-        "price": 360,
-        "stars": 4,
-        "rates": 95,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessories",
-        "details": "Details"
-      },
-      {
-        "id": "11",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 160,
-        "stars": 5,
-        "rates": 48,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "12",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1160,
-        "stars": 3,
-        "rates": 82,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "13",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 400,
-        "stars": 4,
-        "rates": 56,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "14",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 400,
-        "stars": 5,
-        "rates": 39,
-        "discount": 40,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "15",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 4,
-        "rates": 61,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "16",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 3,
-        "rates": 78,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "17",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 4,
-        "rates": 90,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "18",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 5,
-        "rates": 44,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "19",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 4,
-        "rates": 37,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "20",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 1200,
-        "stars": 3,
-        "rates": 49,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
-      },
-      {
-        "id": "21",
-        "imageSrc": "https://i.pinimg.com/736x/2e/af/0d/2eaf0d16b87ba616fac128dbbbddc0c3.jpg",
-        "title": "Pet brush",
-        "price": 400,
-        "stars": 4,
-        "rates": 65,
-        "discount": 40,
-        "state": 1,
-        "quantity": 0,
-        "type": "Pet Accessory",
-        "details": "details"
+      "demographic_info": {
+        "age_group": "40-50",
+        "marital_status": "Divorced",
+        "occupation": "Manager"
       }
-    ],
-    "customers":
-    [
-      {
-        "id": 1,
-        "name": "Jaime Lannister",
-        "createdAt": "2022-05-10",
-        "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
-        "status": "Active",
-        "isVendor": false,
-        "addresses": [
-          {
-            "street": "123 Elm St",
-            "city": "Anytown",
-            "state": "CA",
-            "zip": "12345"
-          }
-        ],
-        "contact": {
-          "phone": "555-1234",
-          "email": "jaime@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Robert Baratheon",
+      "createdAt": "2022-03-05",
+      "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
+      "status": "Active",
+      "isVendor": false,
+      "addresses": [
+        {
+          "street": "789 Pine St",
+          "city": "Metroville",
+          "state": "TX",
+          "zip": "34567"
         },
-        "dob": "1985-03-15",
-        "gender": "Female",
-        "financial_info": {
-          "bank_account": {
-            "account_number": "9876543210",
-            "branch": "Downtown Branch",
-            "ifsc_code": "ABCD1234"
-          },
-          "credit_card": {
-            "card_number": "**** **** **** 5678",
-            "expiry_date": "09/23",
-            "cvv": "***"
-          },
-          "income": "$80000"
+        {
+          "street": "202 Cedar St",
+          "city": "Smallville",
+          "state": "OH",
+          "zip": "56789"
+        }
+      ],
+      "contact": {
+        "phone": "555-6789",
+        "email": "baratheon@gmail.com"
+      },
+      "dob": "1980-07-03",
+      "gender": "Female",
+      "financial_info": {
+        "bank_account": {
+          "account_number": "7654321098",
+          "branch": "Downtown Branch",
+          "ifsc_code": "IJKL6789"
         },
-        "purchase_history": [
-          {
-            "order_id": 101,
-            "product_id": 1,
-            "purchase_date": "2022-06-20",
-            "transaction_amount": "$500"
-          }
+        "credit_card": {
+          "card_number": "**** **** **** 7890",
+          "expiry_date": "12/22",
+          "cvv": "***"
+        },
+        "income": "$95000"
+      },
+      "purchase_history": [
+        {
+          "order_id": 105,
+          "product_id": 1,
+          "purchase_date": "2022-06-18",
+          "transaction_amount": "$600"
+        },
+        {
+          "order_id": 106,
+          "product_id": 3,
+          "purchase_date": "2022-07-05",
+          "transaction_amount": "$300"
+        }
+      ],
+      "preferences": {
+        "product_preferences": [
+          "Home Appliances",
+          "Clothing"
         ],
-        "preferences": {
-          "product_preferences": ["Electronics", "Home Decor"],
-          "communication_channels": ["Email", "Phone"],
-          "feedback_given": true
+        "communication_channels": [
+          "Email",
+          "Phone"
+        ],
+        "feedback_given": true
+      },
+      "interactions": {
+        "customer_service_calls": 1,
+        "complaints_raised": 0
+      },
+      "social_media": {
+        "profiles": {
+          "facebook": "eva.martinez",
+          "twitter": "eva80"
         },
         "interactions": {
-          "customer_service_calls": 2,
-          "complaints_raised": 1
-        },
-        "social_media": {
-          "profiles": {
-            "facebook": "alice.johnson",
-            "twitter": "alice85"
-          },
-          "interactions": {
-            "posts_liked": 20,
-            "comments_posted": 5
-          }
-        },
-        "demographic_info": {
-          "age_group": "30-40",
-          "marital_status": "Married",
-          "occupation": "Engineer"
+          "posts_liked": 25,
+          "comments_posted": 7
         }
       },
-      {
-        "id": 2,
-        "name": "Daenerys Targaryen",
-        "createdAt": "2022-04-18",
-        "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
-        "status": "Active",
-        "isVendor": false,
-        "addresses": [
-          {
-            "street": "456 Oak St",
-            "city": "Smalltown",
-            "state": "NY",
-            "zip": "23456"
-          },
-          {
-            "street": "789 Pine St",
-            "city": "Metroville",
-            "state": "TX",
-            "zip": "34567"
-          }
-        ],
-        "contact": {
-          "phone": "555-5678",
-          "email": "daenerys@gmail.com"
-        },
-        "dob": "1978-12-10",
-        "gender": "Male",
-        "financial_info": {
-          "bank_account": {
-            "account_number": "8765432109",
-            "branch": "Uptown Branch",
-            "ifsc_code": "EFGH5678"
-          },
-          "credit_card": {
-            "card_number": "**** **** **** 6789",
-            "expiry_date": "07/24",
-            "cvv": "***"
-          },
-          "income": "$90000"
-        },
-        "purchase_history": [
-          {
-            "order_id": 103,
-            "product_id": 2,
-            "purchase_date": "2022-05-15",
-            "transaction_amount": "$700"
-          },
-          {
-            "order_id": 104,
-            "product_id": 4,
-            "purchase_date": "2022-07-10",
-            "transaction_amount": "$1200"
-          }
-        ],
-        "preferences": {
-          "product_preferences": ["Electronics", "Sports Equipment"],
-          "communication_channels": ["Email", "Phone"],
-          "feedback_given": true
-        },
-        "interactions": {
-          "customer_service_calls": 3,
-          "complaints_raised": 2
-        },
-        "social_media": {
-          "profiles": {
-            "facebook": "bob.smith",
-            "twitter": "bob78"
-          },
-          "interactions": {
-            "posts_liked": 15,
-            "comments_posted": 3
-          }
-        },
-        "demographic_info": {
-          "age_group": "40-50",
-          "marital_status": "Divorced",
-          "occupation": "Manager"
-        }
-      },
-      {
-        "id": 3,
-        "name": "Robert Baratheon",
-        "createdAt": "2022-03-05",
-        "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
-        "status": "Active",
-        "isVendor": false,
-        "addresses": [
-          {
-            "street": "789 Pine St",
-            "city": "Metroville",
-            "state": "TX",
-            "zip": "34567"
-          },
-          {
-            "street": "202 Cedar St",
-            "city": "Smallville",
-            "state": "OH",
-            "zip": "56789"
-          }
-        ],
-        "contact": {
-          "phone": "555-6789",
-          "email": "baratheon@gmail.com"
-        },
-        "dob": "1980-07-03",
-        "gender": "Female",
-        "financial_info": {
-          "bank_account": {
-    
-    
-            "account_number": "7654321098",
-            "branch": "Downtown Branch",
-            "ifsc_code": "IJKL6789"
-          },
-          "credit_card": {
-            "card_number": "**** **** **** 7890",
-            "expiry_date": "12/22",
-            "cvv": "***"
-          },
-          "income": "$95000"
-        },
-        "purchase_history": [
-          {
-            "order_id": 105,
-            "product_id": 1,
-            "purchase_date": "2022-06-18",
-            "transaction_amount": "$600"
-          },
-          {
-            "order_id": 106,
-            "product_id": 3,
-            "purchase_date": "2022-07-05",
-            "transaction_amount": "$300"
-          }
-        ],
-        "preferences": {
-          "product_preferences": ["Home Appliances", "Clothing"],
-          "communication_channels": ["Email", "Phone"],
-          "feedback_given": true
-        },
-        "interactions": {
-          "customer_service_calls": 1,
-          "complaints_raised": 0
-        },
-        "social_media": {
-          "profiles": {
-            "facebook": "eva.martinez",
-            "twitter": "eva80"
-          },
-          "interactions": {
-            "posts_liked": 25,
-            "comments_posted": 7
-          }
-        },
-        "demographic_info": {
-          "age_group": "40-50",
-          "marital_status": "Married",
-          "occupation": "Doctor"
-        }
-      },
-      {
-        "id": 4,
-        "name": "Arya Stark",
-        "createdAt": "2022-02-20",
-        "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
-        "status": "Active",
-        "isVendor": true,
-        "addresses": [
-          {
-            "street": "101 Maple St",
-            "city": "Villagetown",
-            "state": "FL",
-            "zip": "45678"
-          }
-        ],
-        "contact": {
-          "phone": "555-7890",
-          "email": "arya@gmail.com"
-        },
-        "dob": "1985-04-28",
-        "gender": "Male",
-        "financial_info": {
-          "bank_account": {
-            "account_number": "6543210987",
-            "branch": "Uptown Branch",
-            "ifsc_code": "MNOP3456"
-          },
-          "credit_card": {
-            "card_number": "**** **** **** 8901",
-            "expiry_date": "11/23",
-            "cvv": "***"
-          },
-          "income": "$85000"
-        },
-        "purchase_history": [
-          {
-            "order_id": 107,
-            "product_id": 2,
-            "purchase_date": "2022-05-10",
-            "transaction_amount": "$700"
-          },
-          {
-            "order_id": 108,
-            "product_id": 5,
-            "purchase_date": "2022-07-18",
-            "transaction_amount": "$1000"
-          }
-        ],
-        "preferences": {
-          "product_preferences": ["Electronics", "Books"],
-          "communication_channels": ["Email", "Phone"],
-          "feedback_given": true
-        },
-        "interactions": {
-          "customer_service_calls": 2,
-          "complaints_raised": 1
-        },
-        "social_media": {
-          "profiles": {
-            "facebook": "michael.brown",
-            "twitter": "mike85"
-          },
-          "interactions": {
-            "posts_liked": 18,
-            "comments_posted": 4
-          }
-        },
-        "demographic_info": {
-          "age_group": "30-40",
-          "marital_status": "Single",
-          "occupation": "Writer"
-        }
-      },
-      {
-        "id": 5,
-        "name": "Sam The Wise",
-        "createdAt": "2022-01-10",
-        "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
-        "status": "Active",
-        "isVendor": false,
-        "addresses": [
-          {
-            "street": "202 Cedar St",
-            "city": "Smallville",
-            "state": "OH",
-            "zip": "56789"
-          }
-        ],
-        "contact": {
-          "phone": "555-8901",
-          "email": "sam@gmail.com"
-        },
-        "dob": "1990-12-12",
-        "gender": "Female",
-        "financial_info": {
-          "bank_account": {
-            "account_number": "5432109876",
-            "branch": "Downtown Branch",
-            "ifsc_code": "UVWX1234"
-          },
-          "credit_card": {
-            "card_number": "**** **** **** 9012",
-            "expiry_date": "06/23",
-            "cvv": "***"
-          },
-          "income": "$75000"
-        },
-        "purchase_history": [
-          {
-            "order_id": 109,
-            "product_id": 1,
-            "purchase_date": "2022-06-05",
-            "transaction_amount": "$500"
-          },
-          {
-            "order_id": 110,
-            "product_id": 4,
-            "purchase_date": "2022-07-20",
-            "transaction_amount": "$1200"
-          }
-        ],
-        "preferences": {
-          "product_preferences": ["Clothing", "Beauty Products"],
-          "communication_channels": ["Email", "Phone"],
-          "feedback_given": true
-        },
-        "interactions": {
-          "customer_service_calls": 1,
-          "complaints_raised": 0
-        },
-        "social_media": {
-          "profiles": {
-            "facebook": "linda.davis",
-            "twitter": "linda90"
-          },
-          "interactions": {
-            "posts_liked": 12,
-            "comments_posted": 2
-          }
-        },
-        "demographic_info": {
-          "age_group": "30-40",
-          "marital_status": "Married",
-          "occupation": "Graphic Designer"
-        }
+      "demographic_info": {
+        "age_group": "40-50",
+        "marital_status": "Married",
+        "occupation": "Doctor"
       }
-    ],
-    "locations":
-    [
-      {
-        "id": 1,
-        "name": "QuickMart",
-        "description": "Athletic footwear and apparel company",
-        "link": "https://nike.com",
-        "order": 1,
-        "status": "Active",
-        "isFeatured": true,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [1, 2, 3],
-        "createdAt": "2023-10-09"
+    },
+    {
+      "id": "4",
+      "name": "Arya Stark",
+      "createdAt": "2022-02-20",
+      "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
+      "status": "Active",
+      "isVendor": true,
+      "addresses": [
+        {
+          "street": "101 Maple St",
+          "city": "Villagetown",
+          "state": "FL",
+          "zip": "45678"
+        }
+      ],
+      "contact": {
+        "phone": "555-7890",
+        "email": "arya@gmail.com"
       },
-      {
-        "id": 2,
-        "name": "Magunas",
-        "description": "Multinational beverage corporation",
-        "link": "https://coca-cola.com",
-        "order": 2,
-        "status": "Active",
-        "isFeatured": false,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [4, 5, 6],
-        "createdAt": "2023-10-09"
+      "dob": "1985-04-28",
+      "gender": "Male",
+      "financial_info": {
+        "bank_account": {
+          "account_number": "6543210987",
+          "branch": "Uptown Branch",
+          "ifsc_code": "MNOP3456"
+        },
+        "credit_card": {
+          "card_number": "**** **** **** 8901",
+          "expiry_date": "11/23",
+          "cvv": "***"
+        },
+        "income": "$85000"
       },
-      {
-        "id": 3,
-        "name": "EastMart",
-        "description": "location of adhesive bandages",
-        "link": "https://band-aid.com",
-        "order": 3,
-        "status": "Active",
-        "isFeatured": true,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [7, 8],
-        "createdAt": "2023-10-09"
+      "purchase_history": [
+        {
+          "order_id": 107,
+          "product_id": 2,
+          "purchase_date": "2022-05-10",
+          "transaction_amount": "$700"
+        },
+        {
+          "order_id": 108,
+          "product_id": 5,
+          "purchase_date": "2022-07-18",
+          "transaction_amount": "$1000"
+        }
+      ],
+      "preferences": {
+        "product_preferences": [
+          "Electronics",
+          "Books"
+        ],
+        "communication_channels": [
+          "Email",
+          "Phone"
+        ],
+        "feedback_given": true
       },
-      {
-        "id": 4,
-        "name": "Khetias",
-        "description": "Multinational corporation that designs and manufactures sports shoes, clothing, and accessories",
-        "link": "https://adidas.com",
-        "order": 4,
-        "status": "Active",
-        "isFeatured": false,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [9, 10],
-        "createdAt": "2023-10-09"
+      "interactions": {
+        "customer_service_calls": 2,
+        "complaints_raised": 1
       },
-      {
-        "id": 5,
-        "name": "Cleanshelf",
-        "description": "Multinational technology company that designs, manufactures, and sells consumer electronics, computer software, and online services",
-        "link": "https://apple.com",
-        "order": 5,
-        "status": "Active",
-        "isFeatured": true,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [11, 12],
-        "createdAt": "2023-10-09"
+      "social_media": {
+        "profiles": {
+          "facebook": "michael.brown",
+          "twitter": "mike85"
+        },
+        "interactions": {
+          "posts_liked": 18,
+          "comments_posted": 4
+        }
       },
-      {
-        "id": 6,
-        "name": "KSPCA",
-        "description": "Multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence",
-        "link": "https://amazon.com",
-        "order": 6,
-        "status": "Active",
-        "isFeatured": false,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [13, 14],
-        "createdAt": "2023-10-09"
-      },
-      {
-        "id": 7,
-        "name": "Carrefour",
-        "description": "Multinational food and beverage company",
-        "link": "https://nestle.com",
-        "order": 7,
-        "status": "Active",
-        "isFeatured": true,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [15, 16],
-        "createdAt": "2023-10-09"
-      },
-      {
-        "id": 8,
-        "name": "Sayen",
-        "description": "Multinational technology company that specializes in Internet-related services and products",
-        "link": "https://google.com",
-        "order": 8,
-        "status": "Active",
-        "isFeatured": false,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [17, 18],
-        "createdAt": "2023-10-09"
-      },
-      {
-        "id": 9,
-        "name": "FoodPlus",
-        "description": "Multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence",
-        "link": "https://amazon.com",
-        "order": 9,
-        "status": "Active",
-    
-    
-        "isFeatured": true,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [19, 20],
-        "createdAt": "2023-10-09"
-      },
-      {
-        "id": 10,
-        "name": "Gilanis",
-        "description": "Multinational food and beverage company",
-        "link": "https://nestle.com",
-        "order": 10,
-        "status": "Active",
-        "isFeatured": false,
-        "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
-        "categories": [21, 22],
-        "createdAt": "2023-10-09"
+      "demographic_info": {
+        "age_group": "30-40",
+        "marital_status": "Single",
+        "occupation": "Writer"
       }
-    ],
-    "reviews":
-    [
-      {
-        "review_id": 1,
-        "product_id": 3,
-        "customer_id": 1,
-        "rating": 5,
-        "review_text": "This product is amazing! It exceeded my expectations and I highly recommend it.",
-        "review_date": "2022-08-15",
-        "status": "Approved"
+    },
+    {
+      "id": "5",
+      "name": "Sam The Wise",
+      "createdAt": "2022-01-10",
+      "image": "https://placehold.co/300/f5f5f5/b0b0b0ff.webp",
+      "status": "Active",
+      "isVendor": false,
+      "addresses": [
+        {
+          "street": "202 Cedar St",
+          "city": "Smallville",
+          "state": "OH",
+          "zip": "56789"
+        }
+      ],
+      "contact": {
+        "phone": "555-8901",
+        "email": "sam@gmail.com"
       },
-      {
-        "review_id": 2,
-        "product_id": 10,
-        "customer_id": 2,
-        "rating": 4,
-        "review_text": "Good quality product. It serves its purpose well.",
-        "review_date": "2022-08-16",
-        "status": "Pending"
+      "dob": "1990-12-12",
+      "gender": "Female",
+      "financial_info": {
+        "bank_account": {
+          "account_number": "5432109876",
+          "branch": "Downtown Branch",
+          "ifsc_code": "UVWX1234"
+        },
+        "credit_card": {
+          "card_number": "**** **** **** 9012",
+          "expiry_date": "06/23",
+          "cvv": "***"
+        },
+        "income": "$75000"
       },
-      {
-        "review_id": 3,
-        "product_id": 4,
-        "customer_id": 3,
-        "rating": 3,
-        "review_text": "The product is okay, but I expected better quality for the price.",
-        "review_date": "2022-08-17",
-        "status": "Rejected"
+      "purchase_history": [
+        {
+          "order_id": 109,
+          "product_id": 1,
+          "purchase_date": "2022-06-05",
+          "transaction_amount": "$500"
+        },
+        {
+          "order_id": 110,
+          "product_id": 4,
+          "purchase_date": "2022-07-20",
+          "transaction_amount": "$1200"
+        }
+      ],
+      "preferences": {
+        "product_preferences": [
+          "Clothing",
+          "Beauty Products"
+        ],
+        "communication_channels": [
+          "Email",
+          "Phone"
+        ],
+        "feedback_given": true
       },
-      {
-        "review_id": 4,
-        "product_id": 1,
-        "customer_id": 4,
-        "rating": 2,
-        "review_text": "Not satisfied with the product. It broke after just a few uses.",
-        "review_date": "2022-08-18",
-        "status": "Approved"
+      "interactions": {
+        "customer_service_calls": 1,
+        "complaints_raised": 0
       },
-      {
-        "review_id": 5,
-        "product_id": 8,
-        "customer_id": 5,
-        "rating": 1,
-        "review_text": "Terrible product! It didn't work at all. I want a refund.",
-        "review_date": "2022-08-19",
-        "status": "Pending"
-      }]
-  }
+      "social_media": {
+        "profiles": {
+          "facebook": "linda.davis",
+          "twitter": "linda90"
+        },
+        "interactions": {
+          "posts_liked": 12,
+          "comments_posted": 2
+        }
+      },
+      "demographic_info": {
+        "age_group": "30-40",
+        "marital_status": "Married",
+        "occupation": "Graphic Designer"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "name": "QuickMart",
+      "description": "Athletic footwear and apparel company",
+      "link": "https://nike.com",
+      "order": 1,
+      "status": "Active",
+      "isFeatured": true,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        1,
+        2,
+        3
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "2",
+      "name": "Magunas",
+      "description": "Multinational beverage corporation",
+      "link": "https://coca-cola.com",
+      "order": 2,
+      "status": "Active",
+      "isFeatured": false,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        4,
+        5,
+        6
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "3",
+      "name": "EastMart",
+      "description": "location of adhesive bandages",
+      "link": "https://band-aid.com",
+      "order": 3,
+      "status": "Active",
+      "isFeatured": true,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        7,
+        8
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "4",
+      "name": "Khetias",
+      "description": "Multinational corporation that designs and manufactures sports shoes, clothing, and accessories",
+      "link": "https://adidas.com",
+      "order": 4,
+      "status": "Active",
+      "isFeatured": false,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        9,
+        10
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "5",
+      "name": "Cleanshelf",
+      "description": "Multinational technology company that designs, manufactures, and sells consumer electronics, computer software, and online services",
+      "link": "https://apple.com",
+      "order": 5,
+      "status": "Active",
+      "isFeatured": true,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        11,
+        12
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "6",
+      "name": "KSPCA",
+      "description": "Multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence",
+      "link": "https://amazon.com",
+      "order": 6,
+      "status": "Active",
+      "isFeatured": false,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        13,
+        14
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "7",
+      "name": "Carrefour",
+      "description": "Multinational food and beverage company",
+      "link": "https://nestle.com",
+      "order": 7,
+      "status": "Active",
+      "isFeatured": true,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        15,
+        16
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "8",
+      "name": "Sayen",
+      "description": "Multinational technology company that specializes in Internet-related services and products",
+      "link": "https://google.com",
+      "order": 8,
+      "status": "Active",
+      "isFeatured": false,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        17,
+        18
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "9",
+      "name": "FoodPlus",
+      "description": "Multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence",
+      "link": "https://amazon.com",
+      "order": 9,
+      "status": "Active",
+      "isFeatured": true,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        19,
+        20
+      ],
+      "createdAt": "2023-10-09"
+    },
+    {
+      "id": "10",
+      "name": "Gilanis",
+      "description": "Multinational food and beverage company",
+      "link": "https://nestle.com",
+      "order": 10,
+      "status": "Active",
+      "isFeatured": false,
+      "image": "https://placehold.co/1000/f5f5f5/b0b0b0ff.webp",
+      "categories": [
+        21,
+        22
+      ],
+      "createdAt": "2023-10-09"
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": 1,
+      "product_id": 3,
+      "customer_id": 1,
+      "rating": 5,
+      "review_text": "This product is amazing! It exceeded my expectations and I highly recommend it.",
+      "review_date": "2022-08-15",
+      "status": "Approved",
+      "id": "fa00"
+    },
+    {
+      "review_id": 2,
+      "product_id": 10,
+      "customer_id": 2,
+      "rating": 4,
+      "review_text": "Good quality product. It serves its purpose well.",
+      "review_date": "2022-08-16",
+      "status": "Pending",
+      "id": "58bd"
+    },
+    {
+      "review_id": 3,
+      "product_id": 4,
+      "customer_id": 3,
+      "rating": 3,
+      "review_text": "The product is okay, but I expected better quality for the price.",
+      "review_date": "2022-08-17",
+      "status": "Rejected",
+      "id": "95ca"
+    },
+    {
+      "review_id": 4,
+      "product_id": 1,
+      "customer_id": 4,
+      "rating": 2,
+      "review_text": "Not satisfied with the product. It broke after just a few uses.",
+      "review_date": "2022-08-18",
+      "status": "Approved",
+      "id": "cc5c"
+    },
+    {
+      "review_id": 5,
+      "product_id": 8,
+      "customer_id": 5,
+      "rating": 1,
+      "review_text": "Terrible product! It didn't work at all. I want a refund.",
+      "review_date": "2022-08-19",
+      "status": "Pending",
+      "id": "daf7"
+    }
+  ]
+}
